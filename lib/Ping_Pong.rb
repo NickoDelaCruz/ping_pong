@@ -1,16 +1,12 @@
-def ping_pong(x)
+def ping_pong?(num)
   x = 0
   array = []
-  while (x < 10)
+  while (x < num)
     x = x + 1
     array.push(x)
-    if x % 3 === 0
-      x = "Ping"
-    else
-      x = x
-    end
-    array.push(x)
-end
+    if x % 3 == 0
+      array.push("Ping")
+  end
  array
 end
 
